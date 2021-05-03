@@ -1,0 +1,26 @@
+<h1>Registrar nuevo Cliente</h1>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" class="formulario">
+  <div class="mb-3">
+    <label for="Nombre" class="form-label">Nombres</label>
+    <input type="text" class="form-control" id="Nombre" name="Nombre" formControlName="Nombres" placeholder="Nombres completos" value="" /><br />
+  </div>
+  <div class="mb-3">
+    <label for="ctrApellidos" class="form-label">Apellidos</label>
+    <input type="text" class="form-control" id="ctrApellidos" name="Apellidos"  formControlName="Apellidos" placeholder="Apellidos completos" value="" /><br />
+  </div>
+  <div class="mb-3">
+    <label for="ctrCorreo" class="form-label">E-mail</label>
+    <input type="email" class="form-control" id="ctrCorreo" name="Correo" placeholder="nombre@example.com" formControlName="Correo" value="" /><br />
+  </div>
+  <div class="mb-3">
+    <label for="ctrFechaNacimiento" class="form-label">Fecha de nacimiento</label>
+    <input type="date" class="form-control" id="ctrFechaNacimiento" name="FechaNacimiento" placeholder="dd/mm/aaaa" formControlName="FechaNacimiento" value="" /><br />
+  </div>
+  <div class="mb-3">
+    <label for="ctrDireccion" class="form-label">Dirección</label>
+    <input type="text" class="form-control" id="ctrDireccion" name="Direccion" placeholder="Av. Jirón # 653 - Dpto 123" value=""  formControlName="Direccion" /><br />
+  </div>
+  <div class="mb-3 right">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </div>
+</form>
